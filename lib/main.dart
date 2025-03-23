@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:home_decor_app/screens/lunch/lunch_screen.dart';
 
 void main() {
-  runApp(HoemDecore());
+  runApp(MyApp());
 }
 
-class HoemDecore extends StatelessWidget {
-  const HoemDecore({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
