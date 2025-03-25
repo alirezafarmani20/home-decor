@@ -18,7 +18,7 @@ class _LunchScreen2State extends State<LunchScreen2> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image(image: AssetImage("lib/assets/images/home2.png")),
-            SizedBox(height: 5),
+            SizedBox(height: 15),
             Text(
               "HOME",
               style: TextStyle(
@@ -37,7 +37,7 @@ class _LunchScreen2State extends State<LunchScreen2> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 40,right: 40),
+              padding: EdgeInsets.only(left: 40, right: 40),
               child: Text(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. ",
                 style: TextStyle(
@@ -49,14 +49,48 @@ class _LunchScreen2State extends State<LunchScreen2> {
                 textAlign: TextAlign.center,
               ),
             ),
-            SizedBox(height: 8,),
+            SizedBox(height: 15),
             Container(
               // button box
               child: Column(
                 children: [
-                  FloatingActionButton(
-                    onPressed: () {},
-                    child: ButtonTheme(child: Text("hello world")),
+                  SizedBox(
+                    width: 207,
+                    height: 45,
+                    child: TextButton(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        backgroundColor: AppTheme.salmon,
+                      ),
+                      child: Text(
+                        "Log In",
+                        style: TextStyle(
+                          color: AppTheme.terracotta,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      //style: ButtonStyle( backgroundColor:Color(0xffF4B5A4)),
+                    ),
+                  ),
+                  SizedBox(height: 15),
+                  SizedBox(
+                    width: 207,
+                    height: 45,
+                    child: TextButton(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        backgroundColor: AppTheme.brownRosy,
+                      ),
+                      child: Text(
+                        "Sign Up",
+                        style: TextStyle(
+                          color: AppTheme.terracotta,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
