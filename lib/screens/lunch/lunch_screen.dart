@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_decor_app/core/theme.dart';
+import 'package:home_decor_app/screens/lunch/lunch_screen2.dart';
 
 class LunchScreen extends StatefulWidget {
   const LunchScreen({super.key});
@@ -9,6 +10,18 @@ class LunchScreen extends StatefulWidget {
 }
 
 class _LunchScreenState extends State<LunchScreen> {
+  @override
+  // run to page
+  void initState() {
+    super.initState();
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => LunchScreen2()), // صفحه بعدی شما
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
