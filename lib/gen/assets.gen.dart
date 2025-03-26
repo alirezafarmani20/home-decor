@@ -19,8 +19,21 @@ class $LibGen {
 class $LibAssetsGen {
   const $LibAssetsGen();
 
+  /// Directory path: lib/assets/icons
+  $LibAssetsIconsGen get icons => const $LibAssetsIconsGen();
+
   /// Directory path: lib/assets/images
   $LibAssetsImagesGen get images => const $LibAssetsImagesGen();
+}
+
+class $LibAssetsIconsGen {
+  const $LibAssetsIconsGen();
+
+  /// File path: lib/assets/icons/arow.png
+  AssetGenImage get arow => const AssetGenImage('lib/assets/icons/arow.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [arow];
 }
 
 class $LibAssetsImagesGen {
@@ -32,8 +45,11 @@ class $LibAssetsImagesGen {
   /// File path: lib/assets/images/home2.png
   AssetGenImage get home2 => const AssetGenImage('lib/assets/images/home2.png');
 
+  /// File path: lib/assets/images/onbg1.png
+  AssetGenImage get onbg1 => const AssetGenImage('lib/assets/images/onbg1.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [home, home2];
+  List<AssetGenImage> get values => [home, home2, onbg1];
 }
 
 class Assets {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_decor_app/core/theme.dart';
-import 'package:home_decor_app/screens/lunch/lunch_screen2.dart';
+import 'package:home_decor_app/screens/onboarding/onboardingA_screen.dart';
 
 class LunchScreen extends StatefulWidget {
   const LunchScreen({super.key});
@@ -17,7 +17,7 @@ class _LunchScreenState extends State<LunchScreen> {
     Future.delayed(Duration(seconds: 3), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => LunchScreen2()), // صفحه بعدی شما
+        MaterialPageRoute(builder: (context) => OnboardingaScreen()), // صفحه بعدی شما
       );
     });
   }
