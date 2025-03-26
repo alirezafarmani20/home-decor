@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:flutter/material.dart';
 import 'package:home_decor_app/core/theme.dart';
 import 'package:home_decor_app/screens/onboarding/onboarding_screen2.dart';
