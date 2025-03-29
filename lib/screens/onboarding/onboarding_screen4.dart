@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:home_decor_app/core/theme.dart';
-import 'package:home_decor_app/screens/home/home_screen.dart';
+import 'package:home_decor_app/screens/login/login_screen.dart';
 
 class OnboardingScreen4 extends StatefulWidget {
   const OnboardingScreen4({super.key});
@@ -100,7 +100,7 @@ class _OnboardingScreen4State extends State<OnboardingScreen4> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => HomeScreen(),
+                                  builder: (context) => LoginScreen(),
                                 ),
                               );
                             },
